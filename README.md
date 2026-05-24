@@ -35,3 +35,5 @@ The program applies Probability and Statistics concepts including:
 
 - Measures stock volatility using standard deviation
 - Provides investment risk interpretation
+- Identifies highest and lowest stock prices
+- Calculates stock price range
