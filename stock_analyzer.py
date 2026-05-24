@@ -2,6 +2,8 @@
 # This program calculates daily stock returns.
 
 # Ask user to enter stock prices
+import math
+
 prices = input("Enter stock prices separated by spaces: ")
 
 # Convert input into numbers
@@ -45,3 +47,20 @@ else:
 
     else:
         print("Trend Analysis: Stable Trend")
+            # Calculate variance
+    variance = sum((x - mean_return) ** 2 for x in daily_returns) / len(daily_returns)
+
+    # Calculate standard deviation
+    std_deviation = math.sqrt(variance)
+
+    # Display standard deviation
+    print(f"Volatility (Standard Deviation): {std_deviation:.2f}")
+        # Interpret volatility
+    if std_deviation > 5:
+        print("Risk Level: High Volatility")
+
+    elif std_deviation > 2:
+        print("Risk Level: Moderate Volatility")
+
+    else:
+        print("Risk Level: Low Volatility")
