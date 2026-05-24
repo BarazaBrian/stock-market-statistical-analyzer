@@ -1,26 +1,26 @@
-# 📊 Stock Market Statistical Analyzer
+#  Stock Market Statistical Analyzer
 
 A Python-based project that applies **Probability and Statistics** to real-world stock market data.  
 The system analyzes stock prices, computes statistical measures, visualizes trends, and provides simple predictions using linear regression.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📈 Stock price trend analysis
-- 🔢 Daily return calculations
-- 📊 Mean (average return)
-- ⚖️ Volatility measurement (standard deviation)
-- 📉 Price range analysis
-- 📊 Moving average (trend smoothing)
-- 🔮 Linear regression-based price prediction
-- 📊 Data visualization using graphs
-- 💾 Automatic saving of graphs and reports
-- 🧭 Interactive menu-driven interface
+-  Stock price trend analysis
+-  Daily return calculations
+-  Mean (average return)
+-  Volatility measurement (standard deviation)
+-  Price range analysis
+-  Moving average (trend smoothing)
+-  Linear regression-based price prediction
+-  Data visualization using graphs
+-  Automatic saving of graphs and reports
+-  Interactive menu-driven interface
 
 ---
 
-## 🧠 Mathematical Concepts Used
+##  Mathematical Concepts Used
 
 This project applies key Probability and Statistics concepts:
 
@@ -33,27 +33,27 @@ This project applies key Probability and Statistics concepts:
 
 ---
 
-## 📌 Key Formulas
+## Key Formulas
 
-### 📈 Daily Return
+###  Daily Return
 
 :contentReference[oaicite:0]{index=0}
 
 ---
 
-### 📊 Mean (Average)
+###  Mean (Average)
 
 :contentReference[oaicite:1]{index=1}
 
 ---
 
-### ⚖️ Standard Deviation (Volatility)
+###  Standard Deviation (Volatility)
 
 :contentReference[oaicite:2]{index=2}
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python 3
 - NumPy
@@ -63,7 +63,7 @@ This project applies key Probability and Statistics concepts:
 
 ---
 
-## 📊 Data Visualization
+##  Data Visualization
 
 The system generates and saves the following graphs:
 
@@ -76,7 +76,8 @@ All outputs are saved in the `results/` folder.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+
 stock-market-statistical-analyzer/
 │
 ├── stock_analyzer.py
@@ -90,7 +91,7 @@ stock-market-statistical-analyzer/
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### 1. Install dependencies
 
