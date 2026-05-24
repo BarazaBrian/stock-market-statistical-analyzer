@@ -4,6 +4,7 @@
 # Ask user to enter stock prices
 import math
 import matplotlib.pyplot as plt
+import numpy as np
 
 prices = input("Enter stock prices separated by spaces: ")
 
@@ -129,4 +130,33 @@ else:
     plt.grid(True)
 
     plt.savefig("results/moving_average.png")
+    plt.show()
+        # Trend prediction using linear regression
+    x = np.arange(len(prices))
+    y = np.array(prices)
+
+    # Fit line (slope + intercept)
+    slope, intercept = np.polyfit(x, y, 1)
+
+    # Predict next 3 days
+    future_days = np.array([len(prices), len(prices)+1, len(prices)+2])
+    predictions = slope * future_days + intercept
+
+    print("\nPredicted Future Prices:")
+    for i, price in enumerate(predictions, start=1):
+        print(f"Day +{i}: {price:.2f}")
+
+            # Plot prediction graph
+    plt.figure()
+
+    plt.plot(x, y, marker='o', label="Actual Prices")
+    plt.plot(future_days, predictions, marker='o', linestyle='dashed', label="Predicted Prices")
+
+    plt.title("Stock Price Prediction (Linear Trend)")
+    plt.xlabel("Days")
+    plt.ylabel("Price")
+    plt.grid(True)
+    plt.legend()
+
+    plt.savefig("results/prediction.png")
     plt.show()
