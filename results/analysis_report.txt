@@ -1,0 +1,13 @@
+--- Stock Market Analysis ---
+
+Daily Returns:
+Day 1: 2.00%
+Day 2: -0.98%
+Day 3: 3.96%
+Day 4: 4.76%
+
+Average Daily Return: 2.44%
+Volatility (Standard Deviation): 2.21
+Highest Stock Price: 110.0
+Lowest Stock Price: 100.0
+Price Range: 10.0

@@ -3,10 +3,11 @@
 
 # Ask user to enter stock prices
 import math
+import matplotlib.pyplot as plt
 
 prices = input("Enter stock prices separated by spaces: ")
 
-# Convert input into numbers
+# Convert input into numbersclear
 prices = [float(price) for price in prices.split()]
 
 # Check if enough prices were entered
@@ -76,3 +77,56 @@ else:
 
     # Display price range
     print(f"Price Range: {price_range}")
+        # Create stock price graph
+    plt.plot(prices)
+
+    # Add graph title and labels
+    plt.title("Stock Price Trend")
+    plt.xlabel("Days")
+    plt.ylabel("Stock Price")
+
+    # Display graph
+    plt.show()
+    # Create stock price graph
+    plt.figure()
+
+    plt.plot(prices, marker='o')
+
+    plt.title("Stock Price Trend")
+    plt.xlabel("Days")
+    plt.ylabel("Stock Price")
+    plt.grid(True)
+
+# Save FIRST
+    plt.savefig("results/stock_price_trend.png")
+
+# THEN show
+    plt.show()
+
+    # Calculate Moving Average (SMA with window size 3)
+    window_size = 3
+    moving_averages = []
+
+    for i in range(len(prices)):
+
+        if i < window_size - 1:
+            continue
+
+        window = prices[i - window_size + 1:i + 1]
+        sma = sum(window) / window_size
+        moving_averages.append(sma)
+
+    print("\nMoving Average (3-day):", moving_averages)
+        # Moving average graph
+    plt.figure()
+
+    plt.plot(range(window_size - 1, len(prices)), moving_averages, marker='o')
+    plt.plot(prices, alpha=0.5)
+
+    plt.title("Stock Price vs Moving Average")
+    plt.xlabel("Days")
+    plt.ylabel("Price")
+    plt.grid(True)
+
+    plt.savefig("results/moving_average.png")
+    plt.show()
