@@ -26,3 +26,9 @@ The program applies Probability and Statistics concepts including:
 - Daily return calculation
 - Mean return
 - Standard deviation (volatility)
+
+## Features
+
+- Calculates daily stock returns
+- Computes average daily return
+- Provides stock trend interpretation
