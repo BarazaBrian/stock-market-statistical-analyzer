@@ -77,6 +77,7 @@ All outputs are saved in the `results/` folder.
 ---
 
 ## 📁 Project Structure
+
 stock-market-statistical-analyzer/
 │
 ├── stock_analyzer.py
