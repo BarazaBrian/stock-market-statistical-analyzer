@@ -63,7 +63,7 @@ This project applies key Probability and Statistics concepts:
 
 ---
 
-##  Data Visualization
+## 📊 Data Visualization
 
 The system generates and saves the following graphs:
 
@@ -76,7 +76,7 @@ All outputs are saved in the `results/` folder.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 stock-market-statistical-analyzer/
 │
@@ -91,7 +91,7 @@ stock-market-statistical-analyzer/
 
 ---
 
-##  How to Run
+## ▶️ How to Run
 
 ### 1. Install dependencies
 
