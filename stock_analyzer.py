@@ -12,9 +12,9 @@ prices = [float(price) for price in prices.split()]
 # Check if enough prices were entered
 if len(prices) < 2:
     print("Please enter at least two stock prices.")
-
+    print("\n--- Stock Market Analysis ---")
 else:
-
+    print("\n--- Stock Market Analysis ---")
     # Create empty list for daily returns
     daily_returns = []
 
@@ -64,3 +64,15 @@ else:
 
     else:
         print("Risk Level: Low Volatility")
+            # Find highest and lowest stock prices
+    highest_price = max(prices)
+    lowest_price = min(prices)
+
+    # Display highest and lowest prices
+    print(f"Highest Stock Price: {highest_price}")
+    print(f"Lowest Stock Price: {lowest_price}")
+        # Calculate price range
+    price_range = highest_price - lowest_price
+
+    # Display price range
+    print(f"Price Range: {price_range}")
