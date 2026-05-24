@@ -1,39 +1,107 @@
-# Stock Market Statistical Analyzer
+# 📊 Stock Market Statistical Analyzer
 
-My project applies Probability and Statistics concepts to stock market analysis using Python.
+A Python-based project that applies **Probability and Statistics** to real-world stock market data.  
+The system analyzes stock prices, computes statistical measures, visualizes trends, and provides simple predictions using linear regression.
 
-## Features
-- User input of stock prices
-- Daily return calculation
-- Mean return calculation
-- Volatility analysis using standard deviation
-- Trend interpretation
+---
 
-## Technologies Used
-- Python
-- Git
-- GitHub
+## 🚀 Features
 
-## Mathematical Concepts
-- Mean
+- 📈 Stock price trend analysis
+- 🔢 Daily return calculations
+- 📊 Mean (average return)
+- ⚖️ Volatility measurement (standard deviation)
+- 📉 Price range analysis
+- 📊 Moving average (trend smoothing)
+- 🔮 Linear regression-based price prediction
+- 📊 Data visualization using graphs
+- 💾 Automatic saving of graphs and reports
+- 🧭 Interactive menu-driven interface
+
+---
+
+## 🧠 Mathematical Concepts Used
+
+This project applies key Probability and Statistics concepts:
+
+- Percentage change (returns)
+- Mean (average)
+- Variance
 - Standard deviation
-- Percentage change
+- Moving averages
+- Linear regression (trend prediction)
 
-## Mathematical Concepts Used
+---
 
-The program applies Probability and Statistics concepts including:
+## 📌 Key Formulas
 
-- Daily return calculation
-- Mean return
-- Standard deviation (volatility)
+### 📈 Daily Return
 
-## Features
+:contentReference[oaicite:0]{index=0}
 
-- Calculates daily stock returns
-- Computes average daily return
-- Provides stock trend interpretation
+---
 
-- Measures stock volatility using standard deviation
-- Provides investment risk interpretation
-- Identifies highest and lowest stock prices
-- Calculates stock price range
+### 📊 Mean (Average)
+
+:contentReference[oaicite:1]{index=1}
+
+---
+
+### ⚖️ Standard Deviation (Volatility)
+
+:contentReference[oaicite:2]{index=2}
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3
+- NumPy
+- Matplotlib
+- Math library
+- OS module (file handling)
+
+---
+
+## 📊 Data Visualization
+
+The system generates and saves the following graphs:
+
+- Stock price trend graph
+- Daily returns graph
+- Prediction graph
+- Moving average trend graph
+
+All outputs are saved in the `results/` folder.
+
+---
+
+## 📁 Project Structure
+stock-market-statistical-analyzer/
+│
+├── stock_analyzer.py
+├── README.md
+├── results/
+│ ├── stock_price_trend.png
+│ ├── daily_returns.png
+│ ├── prediction.png
+│ ├── moving_average.png
+│ ├── analysis_report.txt
+
+---
+
+## ▶️ How to Run
+
+### 1. Install dependencies
+
+```bash
+pip install numpy matplotlib
+
+Run the program
+python stock_analyzer.py
+
+Enter stock prices when prompted
+
+Example:
+
+100 102 101 105 110
