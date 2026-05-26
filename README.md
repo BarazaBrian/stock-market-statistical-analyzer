@@ -31,16 +31,19 @@ This project applies key Probability and Statistics concepts:
 
 ###  Daily Return
 
+```
 daily_return = ((prices[i] - prices[i - 1]) / prices[i - 1]) * 100
-
+```
 ###  Mean (Average)
 
+```
 mean_return = sum(daily_returns) / len(daily_returns)
-
+```
 ###  Standard Deviation (Volatility)
 
+```
 std_deviation = math.sqrt(sum((x - mean_return) ** 2 for x in daily_returns) / len(daily_returns))
-
+```
 ##  Technologies Used
 
 - Python 3
