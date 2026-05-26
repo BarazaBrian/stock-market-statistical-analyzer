@@ -3,8 +3,6 @@
 A Python-based project that applies **Probability and Statistics** to real-world stock market data.  
 The system analyzes stock prices, computes statistical measures, visualizes trends, and provides simple predictions using linear regression.
 
----
-
 ##  Features
 
 -  Stock price trend analysis
@@ -18,8 +16,6 @@ The system analyzes stock prices, computes statistical measures, visualizes tren
 -  Automatic saving of graphs and reports
 -  Interactive menu-driven interface
 
----
-
 ##  Mathematical Concepts Used
 
 This project applies key Probability and Statistics concepts:
@@ -31,27 +27,19 @@ This project applies key Probability and Statistics concepts:
 - Moving averages
 - Linear regression (trend prediction)
 
----
-
 ## Key Formulas
 
 ###  Daily Return
 
 :contentReference[oaicite:0]{index=0}
 
----
-
 ###  Mean (Average)
 
 :contentReference[oaicite:1]{index=1}
 
----
-
 ###  Standard Deviation (Volatility)
 
 :contentReference[oaicite:2]{index=2}
-
----
 
 ##  Technologies Used
 
@@ -60,8 +48,6 @@ This project applies key Probability and Statistics concepts:
 - Matplotlib
 - Math library
 - OS module (file handling)
-
----
 
 ## Data Visualization
 
@@ -74,35 +60,30 @@ The system generates and saves the following graphs:
 
 All outputs are saved in the `results/` folder.
 
----
-
 ## Project Structure
-
+```
 stock-market-statistical-analyzer/
 │
 ├── stock_analyzer.py
-├── README.md
-├── results/
-│ ├── stock_price_trend.png
-│ ├── daily_returns.png
-│ ├── prediction.png
-│ ├── moving_average.png
-│ ├── analysis_report.txt
-
----
+└─results/ 
+  ├── daily_returns.png
+  ├── moving_average.png
+  ├── prediction.png
+  ├── stock_price_trend.png
+  └──analysis_report.txt
+```
 
 ##  How to Run
 
 ### 1. Install dependencies
 
-```bash
+```
 pip install numpy matplotlib
+```
+### 2. Run the program
 
-Run the program
+```
 python stock_analyzer.py
-
-Enter stock prices when prompted
-
-Example:
-
-100 102 101 105 110
+```
+## Author
+[Baraza Brian](https://github.com/BarazaBrian)
