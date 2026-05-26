@@ -31,15 +31,15 @@ This project applies key Probability and Statistics concepts:
 
 ###  Daily Return
 
-:contentReference[oaicite:0]{index=0}
+daily_return = ((prices[i] - prices[i - 1]) / prices[i - 1]) * 100
 
 ###  Mean (Average)
 
-:contentReference[oaicite:1]{index=1}
+mean_return = sum(daily_returns) / len(daily_returns)
 
 ###  Standard Deviation (Volatility)
 
-:contentReference[oaicite:2]{index=2}
+std_deviation = math.sqrt(sum((x - mean_return) ** 2 for x in daily_returns) / len(daily_returns))
 
 ##  Technologies Used
 
